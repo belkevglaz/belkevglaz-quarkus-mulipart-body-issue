@@ -1,0 +1,14 @@
+###
+POST http://localhost/hello
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="stream"
+Content-Type:  "application/octet-stream
+
+{}
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="huge128.bin"
+
+< huge150.bin
+--WebAppBoundary--
